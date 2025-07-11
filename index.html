@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIceberg Mind</title>
+<link rel="stylesheet" href="style.css" />
+  
+  <!-- Import Google Font: Be Vietnam Pro -->
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- SEO META TAGS -->
+<meta name="description" content="AIceberg Mind is a deep content platform where artificial intelligence meets humanistic insight. Discover what lies beneath the surface." />
+<meta name="keywords" content="AI, creativity, content platform, digital, education, AIceberg Mind" />
+<meta name="author" content="AIceberg Mind Team" />
+<meta name="robots" content="index, follow" />
+
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="AIceberg Mind" />
+<meta property="og:description" content="Where AI meets human depth. Discover the invisible side of content." />
+<meta property="og:image" content="https://www.example.com/images/og-image.jpg" />
+<meta property="og:url" content="https://www.aicebergmind.com" />
+<meta property="og:type" content="website" />
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AIceberg Mind" />
+<meta name="twitter:description" content="Where AI meets human depth." />
+<meta name="twitter:image" content="https://www.example.com/images/twitter-card.jpg" />
+
+<!-- GEOLOCATION (approximate location of core team / HQ) -->
+<meta name="geo.region" content="FR" /> <!-- ISO region code -->
+<meta name="geo.placename" content="Paris" />
+<meta name="geo.position" content="48.8333;2.2477" />
+<meta name="ICBM" content="48.8333, 2.2477" /> <!-- Legacy compatibility -->
+
+<!-- HREFLANG for future multilingual versions -->
+<link rel="alternate" hreflang="en" href="https://www.aicebergmind.com/" />
+<link rel="alternate" hreflang="it" href="https://www.aicebergmind.com/it/" />
+<link rel="alternate" hreflang="de" href="https://www.aicebergmind.com/de/" />
+<link rel="alternate" hreflang="x-default" href="https://www.aicebergmind.com/" />
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AIceberg Mind",
+  "url": "https://www.aicebergmind.com",
+  "logo": "https://www.aicebergmind.com/images/logo.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/aicebergmind",
+    "https://twitter.com/aicebergmind",
+    "https://youtube.com/@aicebergmind"
+  ],
+  "description": "Educational resources nourished by science, powered by AI.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Paris",
+    "addressRegion": "France",
+    "addressCountry": "FR"
+  }
+}
+</script>
+
+
+
+</head>
+<body>
+
+  <!-- 1. HERO SECTION (parte visibile dell'iceberg) -->
+  <header class="hero">
+        <p class="tagline">Where AI meets human depth</p>
+		<h1 class="hero-title">
+  AI<span>ceberg</span> Mind
+</h1>
+	<h2 class="tagline1">Educational resources nourished by science, powered by AI.</h2>
+    <div class="scroll-indicator">
+
+	  <span class="arrow">↓</span>
+      <p>Dive in</p>
+    </div>
+      <div class="iceberg-top">
+  <img src="images/iceberg_top.svg" alt="Iceberg top">
+</div>
+  </header>
+
+  <!-- 2. MENU STICKY (si attiva dopo lo scroll) -->
+  <nav class="sticky-menu" id="main-menu">
+    <ul>
+      <li><a href="#MENU">COMING SOON. Stay tuned!</a></li>
+    </ul>
+  </nav>
+  <!-- 3. CONTENUTO IMMERSIVO PARALLAX -->
+<main class="content-overlay"> 
+<div class="deep-background active"></div>
+
+  <!-- 3.1 Visione -->
+  <section id="VISION" class="parallax-layer">
+  
+  <section class="intro" id="Intro">
+  <div class="intro-text">
+    <h1>Aiceberg Mind — Awakening minds from the earliest years</h1>
+    <h2>
+      Aiceberg Mind is much more than a digital educational production company.</h2>
+      <p>It's a project of heart and science, born to support parents in their most
+      essential mission: programming their children's inner future.<br><br>
+      We create multi-format content — videos, audios, eBooks, applications, printables —
+      to support families in building the first years of life, the period when the
+      essential is forged: the unconscious program that will guide tomorrow's adult.
+    </p>
+  </div>
+
+  <div class="countdown-container">
+    <h2>Launching in</h2>
+    <div id="countdown">
+      <span id="days">00</span>d :
+      <span id="hours">00</span>h :
+      <span id="minutes">00</span>m :
+      <span id="seconds">00</span>s
+    </div>
+  </div>
+</section>
+
+  
+	    <h1>CURIUOS?</h1>
+		
+		
+	<p>Contact us</p>
+<a href="mailto:contact@aicebergmind.com" class="email-link">
+  Email: contact@aicebergmind.com
+</a>
+	<section>
+	</main>
+	    <!-- 5. Footer -->
+  <footer>
+    <p>© 2025 AIceberg Mind</p>
+    <ul class="footer-links">
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Cookie</a></li>
+    </ul>
+  </footer>
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const menu = document.getElementById("main-menu");
+  const background = document.querySelector(".deep-background");
+  const hero = document.querySelector(".hero");
+  const scrollIndicator = document.querySelector(".scroll-indicator");
+  const heroHeight = hero.offsetHeight;
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+
+    // Sticky menu logic
+    if (scrollY > heroHeight - 30) {
+      menu.style.display = "flex";
+      menu.classList.add("visible");
+      background.classList.add("active");
+    } else {
+      menu.style.display = "none";
+      menu.classList.remove("visible");
+      background.classList.remove("active");
+    }
+
+    // Scroll indicator hide on scroll
+    if (scrollY > 30) {
+      scrollIndicator.classList.add("hidden");
+    } else {
+      scrollIndicator.classList.remove("hidden");
+    }
+  });
+});
+</script>
+<script>
+document.addEventListener("scroll", () => {
+  const deepBg = document.querySelector(".deep-background");
+  const maxScroll = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = window.scrollY / maxScroll;
+
+  // Opacità tra 0.1 e 0.9
+  const minOpacity = 0.1;
+  const maxOpacity = 0.9;
+  const opacity = minOpacity + (maxOpacity - minOpacity) * scrollPercent;
+
+  // Brightness tra 1 (chiaro) e 0.4 (scuro)
+  const brightness = 1 - 0.6 * scrollPercent;
+
+  deepBg.style.opacity = opacity.toFixed(2);
+  deepBg.style.filter = `brightness(${brightness.toFixed(2)})`;
+});
+</script>
+<script>
+document.addEventListener('scroll', () => {
+  const iceberg = document.querySelector('.iceberg-bottom');
+  const scrollTop = window.scrollY;
+
+  iceberg.style.transform = `translate(-50%, ${scrollTop * 0.1}px)`; // effetto discesa lenta
+  iceberg.style.opacity = Math.min(1, scrollTop / 600); // fade-in
+});
+</script>
+<script>
+  // Set your launch date here
+  const launchDate = new Date("2025-08-01T00:00:00").getTime();
+
+  const countdown = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = launchDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days.toString().padStart(2, '0');
+    document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.getElementById("countdown").innerHTML = "We're live!";
+    }
+  }, 1000);
+</script>
+
+</html>
